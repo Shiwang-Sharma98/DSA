@@ -22,7 +22,7 @@ void display(vector<vector<int>> &grid,int n){
 void f(vector<vector<int>> &grid,int i,int j, int n,int count){
     if(count == n*n-1){
         // last position
-        grid[i][j]==count;
+        grid[i][j]=count;
         display(grid,n);
         cout<<"***\n";
         grid[i][j]=-1;
